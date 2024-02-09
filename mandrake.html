@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap" rel="stylesheet">
+    <title>Mandrake JS 'sprite'</title>
+    <link rel="icon" type="image/x-icon" href="../alsenFav.png">
+    <link rel="stylesheet" href="css/mandrake.css">
+    <script src="js/mandrake.js" defer></script>
+</head>
+<body>
+    <img id="mandrake" src="data/mandrake.png">
+    <div id="h1-box">
+        <h1>Little Mandrake Sprite</h1>
+    </div>
+        <div id="container">
+            <div id="controls">
+                <h2>Play animation</h2>
+                <div id="input-box">
+                    <input type="radio" name="animation" id="all" checked>
+                    <label for="all">All</label><br>
+                    <input type="radio" name="animation" id="grow">
+                    <label for="grow">Grow</label><br>
+                    <input type="radio" name="animation" id="wink">
+                    <label for="wink">Wink</label><br>
+                    <input type="radio" name="animation" id="float">
+                    <label for="float">Float</label><br>
+                    <input type="radio" name="animation" id="hide">
+                    <label for="hide">Hide</label><br>
+                    <input type="radio" name="animation" id="stop">
+                    <label for="stop">Stop</label>
+                </div>
+            </div>
+            <canvas id="canvas1"></canvas> 
+        </div>      
+</body>
+</html>

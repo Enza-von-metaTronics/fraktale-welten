@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100lvh;
+    background-color: #120b24;
+}
+
+#btn-container{
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    margin-left: 2em;
+}
+
+
+#flex-center-box{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+
+#flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    margin: auto;
+}
+
+#text-box{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: 25px;
+    box-shadow: .3em .4em 1em rgb(250, 178, 21);
+}
+
+h1, h4{
+    color: rgb(206, 184, 152);
+    margin: .5em 0 .3em 0;
+    font-weight: 100;
+}
+
+h1{
+    font-size: 33px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+#container-box{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;    
+    display: flex;
+
+}
+
+.container div{
+    width: 3em;
+    height: 5em;
+    line-height: 8vh;
+    font-weight: 800;
+    text-align: center;
+    margin: .5rem;
+    border-radius: 18px;
+}
+
+
+
+.passiv{
+    padding: 2em 1em;
+    background-color: rgb(236, 220, 170);
+    border: 1px solid black;
+    color: black;
+    font-weight: 100;
+}
+.aktiv{
+    background-color: rgb(18, 52, 41);
+    border: 1px solid black;
+    color: white;
+    font-weight: 100;
+}
+
+button{
+    font-size: large;
+    margin: .5rem .5rem;
+    width: 13em;
+    height: 3.5em;
+    background-color: rgba(249, 201, 70, 0.895);
+    border-radius: 25px;
+    box-shadow: .3em .4em 1em rgb(250, 178, 21);
+    border: none;
+}
+
+button:hover{
+    background-color: rgba(196, 240, 126, 0.96); 
+    cursor: pointer;   
+}
+
+button:active{
+    box-shadow: none;
+}
+
+#start{
+    background-color: rgb(151, 197, 33);
+    border-radius: 50px;
+    width: 5px;
+    height: 5px;
+    cursor: none;   
+}
+#start:active{
+    background-color: rgb(185, 233, 61);   
+}
+
+#pause{
+    background-color: rgb(242, 107, 107);
+    border-radius: 50px;
+    width: 5px;
+    height: 5px;
+    cursor: none;   
+}
+#pause:active{
+    background-color: rgb(217, 75, 75);   
+}
+
+#gui{
+    margin-top: 1rem;
+}
+
+#mandrake_snip{
+    margin-top: 2em;
+    border: 1px solid rgba(255, 255, 0, 0.509);
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: .3em .4em 1em rgb(250, 178, 21);
+}
+
+
+

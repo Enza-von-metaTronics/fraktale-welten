@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: rgba(228, 161, 73, 0.63);
+    background-image: url("../img_1/eastereggs2_mix400.JPG");
+    
+	background-repeat: repeat; */
+    background-size: 300% 250%;
+    background-image: repeating-linear-gradient(
+		-45deg,
+		hsl(216, 67%, 15%) 0%,  /* blau */
+		hsl(347, 59%, 15%) 15%, /* grün */
+		hsl(52, 71%, 22%) 30%,  /* rosa */
+		hsl(216, 67%, 15%) 45%  /* blau */
+	);
+    animation: diagonal alternate 40s infinite;
+}
+@keyframes diagonal {
+    0% {background-position: 0% 50%}
+    100% {background-position: 100% 50%}
+}
+
+#flex-center-box{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;    
+}
+
+#flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;  
+    width: 70%;
+}
+
+h1, h2{
+    color: rgb(246, 246, 168);
+    font-weight: 100;
+    margin: 1em;
+    text-shadow: .2em .2em .2em rgb(106, 89, 149);;
+}
+p{
+    color: rgb(204, 204, 243);
+    margin: .5em 0 .3em 0;
+}
+
+button{
+    margin-top: 1rem;
+    width: 11em;
+    height: 3em;
+    background-color: rgba(200, 233, 90, 0.873);
+    border-radius: 25px;
+    border: none;
+    box-shadow: .2em .2em .2em rgb(96, 126, 125);
+}
+button:hover{
+    background-color: rgb(198, 232, 87);    
+}
+
+button:active, button:active{
+    box-shadow: none;
+}
+
+/* ---------------------------- */
+
+#wrapper{	
+    width:100vw;		
+}
+
+#btn-holder{
+    display: flex;
+    justify-content: center;
+}
+
+
+#game img{		
+    cursor:pointer;
+    padding:5px;
+    width:100px;
+    height:100px;
+    box-shadow: 2px 2px 4px ;		
+}
+
+#game{		
+    margin-top:25px;
+    width:660px;
+    height:680px;
+    padding:10px;
+    border:solid 10px rgb(24, 24, 72); 
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#head, #klicks, #zeit{
+    text-align:center;		
+}
+
+
+.start-passiv{
+    display:none; 		
+}
+
+.start-aktiv{
+    display:block; 
+    cursor:pointer;
+    margin-left:auto;
+    margin-right:auto;
+    width:440px;
+    margin-top:20px;
+}
+
+#audio{
+    display:block;
+    margin:auto;
+    cursor:pointer;
+    width:440px;
+}
+
+.audio-aktiv{
+    background-color: rgba(161, 223, 68, 0.738);
+}
+
+.audio-passiv{
+    background-color: rgba(255, 127, 80, 0.733);
+}
+
+
+

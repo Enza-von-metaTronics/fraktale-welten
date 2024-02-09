@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100lvh;
+    background-color: #120b24;
+}
+
+#flex-center-box{
+    display: flex;
+    width: 100vw; 
+}
+
+#set{
+    color: rgb(206, 128, 26);
+    text-decoration: none;
+    margin: 2rem;
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    background-color: rgba(35, 34, 124, 0.831); 
+}
+
+#set:hover{
+    color: rgba(246, 224, 213, 0.932);
+    background-color: rgba(24, 176, 126, 0.798);
+}
+
+#development{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}

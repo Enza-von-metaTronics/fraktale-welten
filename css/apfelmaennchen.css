@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #120b24;
+    display: flex;
+    justify-content: center;
+}
+
+nav{background-color: orange;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    }
+nav a{display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: orangered;
+    font-weight: bold;
+    font-size: 20px;
+    }
+img#kont{scroll-margin-top: 100px;
+    }
+img#home{scroll-margin-top: 100px;
+    }
+img#komp{scroll-margin-top: 100px;
+    }
+img#impr{scroll-margin-top: 80px;
+    }
+img#gal{scroll-margin-top: 80px;
+    }
+img#start{scroll-margin-top: 80px;
+    }
+img#lichtwelten{scroll-margin-top: 80px;
+    }
+nav a:hover{
+        background-color: orangered;
+        color: orange;
+    }
+
+#btn-container{
+    display: flex;
+    justify-content:center;
+    margin-left: 2em;
+}
+
+button, #set{
+    font-size: large;
+    margin: .5rem .5rem;
+    width: 13em;
+    height: 3.5em;
+    background-color: rgba(249, 201, 70, 0.895);
+    border-radius: 25px;
+    box-shadow: .3em .4em 1em rgb(250, 178, 21);
+    border: none;
+}
+
+button:hover, #set:hover{
+    background-color: rgba(196, 240, 126, 0.96); 
+    cursor: pointer;   
+}
+
+button:active #development:active{
+    box-shadow: none;
+}
+
+#flex-center-box{
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;   
+}
+
+#flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin: 2em;
+    color: rgb(206, 184, 152);
+    text-align: center;
+    font-weight: 100;
+    font-size: 33px;  
+}
+
+h1, p{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3em;
+    border-radius: 25px;
+    box-shadow: .3em .4em 1em rgb(250, 178, 21);
+    color: rgb(206, 184, 152);
+    margin: .5em 0 .3em 0;
+    font-weight: 100;    
+}
+
+#txt1 p{
+    display: inline;
+    float: left;    
+}
+
+#snip1{
+    margin: 1rem;
+    width: 18em;
+}
+
+#fun{
+    opacity: .8;
+    color: orange;
+}
+
+#canvas-box{
+    margin-bottom: 7rem;
+}
+
+#myCanvas:hover{
+    cursor: cell;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

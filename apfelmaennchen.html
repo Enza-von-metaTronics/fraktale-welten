@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap" rel="stylesheet">
+    <title>JS &bull; Apfelmännchen</title>
+    <link rel="stylesheet" href="css/apfelmaennchen.css">
+    <link rel="icon" type="image/x-icon" href="alsenFav.png">
+    <script src="js/mandelbrot.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cell_automat.html">Zell Automat</a>
+        <a href="mandrake.html" target="_blank">Alraune 'Sprite'</a>
+        <a href="memory.html" target="_blank">Memory &bull; 6x6</a>
+        <a href="harp.html">Harp Player <strong>&#119070;</strong></a>
+        <a href="pong.html">PONG miniGAME</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+    <div id="flex-center-box">
+        <div id="flex-center">
+           
+            <div class="circle"></div>
+
+            <h1>DAS MORPHENDE KONZEPT<br>
+                * Fraktale Welten *
+                </h1>
+
+
+            <h2>Das Apfelmännchen von Benoît Mandelbrot<br><pre>Die faszinierende Welt der Mathematik</pre></h2>
+            <img src="img/apfelmaennchen.png" alt="apfelmännchen">
+
+                <p class="txt-box" id="txt1"> <img id="snip1" src="img/TheMandelbrotSetNumberphile_snip1_orange.JPG" alt="TheMandelbrotSetNumberphile_snip1"> Benoît B. Mandelbrot (* 20. November 1924 in Warschau; † 14. Oktober 2010 in Cambridge, Massachusetts) war ein französisch-US-amerikanischer Mathematiker, welcher Beiträge zu einem breiten Spektrum mathematischer Probleme leistete und insbesondere in der theoretischen Physik, der Finanzmathematik und der Chaosforschung beeindruckende Erkenntnisse entwickelte. Am bekanntesten aber wurde er als Vater der fraktalen Geometrie. Er beschrieb die Mandelbrot-Menge und prägte den Begriff „fraktal“. Mandelbrot trug selbst stark zur Popularisierung seiner Arbeiten bei, indem er Bücher schrieb und Vorlesungen hielt, die für die Allgemeinheit bestimmt waren.
+                Überall in der Natur finden sich solche Strukturen und selbstähnlichen Formen wieder, etwa bei Wolken und Küstenlinien - oder auch bei den immer feiner werdenden Verästelungen von Pflanzen.<br><br>
+                <strong id="fun"><i>Auf dieser Seite habe ich ein kleines Beispiel veranschaulicht, das diese 'Welten in Welten in Welten' offenbart, indem du in die Struktur hinein zoomen kannst. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Habe viel Freude daran!</b></i></strong>
+            </p>
+
+            <div id="canvas-box">
+                <canvas id="myCanvas" style="display: block; margin-top: 100px;margin-left: auto;margin-right: auto;">
+                </canvas>
+                <p style="text-align: center; color: orange">
+                  <em>Double click on a specific point in the image to zoom in</em>
+                </p>
+            </div>
+
+        </div>    
+    </div>  
+
+</body>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background: #4d0fa4;
+    background: linear-gradient(135deg, #4a109b, #ee2ff5);
+}
+
+h1{
+    height: 100%;
+    text-align: center;
+    margin: 3rem;
+    margin-bottom: .5rem;
+    font-family: 'Miltonian Tattoo', serif;
+    font-size: 33px;
+    color: rgb(183, 229, 32);
+    text-shadow: 2px 1px 7px darkgreen;
+    letter-spacing: 2px;
+}
+
+#random-box{
+    display: flex;
+    justify-content: center;
+}
+
+#introduction{
+    text-align: center;
+    margin: 3rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: rgb(183, 229, 32);
+    text-shadow: 2px 1px 7px rgb(5, 81, 5);
+    letter-spacing: 2px;
+}
+
+p{
+    font-family: 'Miltonian Tattoo', serif;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(183, 229, 32);
+    text-shadow: 3px 3px 13px rgb(9, 67, 9);
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+#smilie{
+    font-size: 33px;
+}
+
+.pong-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  /*  justify-content: center; */
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+canvas{
+    border: 1px solid darkgreen;
+    box-shadow: 1px 1px 22px darkgreen;
+    background-color: rgba(243, 236, 228, 0.859);
+}
+
+#level-box{
+    display: flex;
+}
+
+.levels{
+    padding: .8rem 4rem;
+    margin: 0;
+    color: darkblue;
+}
+
+.btn{
+    margin: .5rem 1.5rem;
+    border-radius: 25px;
+    background-color: rgba(183, 229, 32, 0.813);
+    text-shadow: 2px 1px 7px rgb(121, 243, 121);
+    box-shadow: 2px 1px 7px darkgreen;
+    border: none;
+}
+.btn:hover{
+    background-color: rgba(205, 251, 56, 0.813);
+    text-shadow: 2px 1px 7px rgb(99, 234, 99);
+    box-shadow: none;
+    cursor: pointer;
+}

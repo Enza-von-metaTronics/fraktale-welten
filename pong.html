@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap" rel="stylesheet">
+    
+    <title>PONG &#10087 miniGAME</title>
+    <link rel="icon" type="image/x-icon" href="alsenFav.png">
+    <link rel="stylesheet" href="css/pong.css">
+    <script src="js/pong.js" defer></script>
+</head>
+<body>
+
+    <h1>PONG &#10087 miniGAME</h1>
+    <div id="random-box">
+        <button class="btn" id="loopmode">
+            <p class="levels">&#936; click HERE to watch the loop-mode  &#936;</p>
+        </button>
+    </div>
+    <p id="introduction">&bull; choose the different levels to change the size of the paddle<br>&bull; use the left-right arrow keys to navigate the paddle<br>&bull; <b><i>HAVE FUN!</i> <strong id="smilie">&#9786;</strong></b></p>
+
+    <div class="pong-box">       
+        <div class="holder">
+            <canvas id="canvas" width="900" height="400"></canvas>
+        </div>
+        <div id="level-box">                
+            <button class="btn" id="level1">
+                <p class="levels">LEVEL 1</p>
+            </button>                
+            <button class="btn" id="level2">
+                <p class="levels">LEVEL 2</p>
+            </button>                
+            <button class="btn" id="level3">
+                <p class="levels">LEVEL 3</p>
+            </button>
+        </div>
+        <button class="btn" id="btn">
+            <p class="levels">start - stop</p>
+        </button>        
+    </div>
+
+
+</body>
+</html>

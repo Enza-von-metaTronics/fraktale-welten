@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="alsenFav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>JS Zellulärer Automat</title>
+    <link rel="stylesheet" href="css/cell.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="icon" type="image/x-icon" href="alsenFav.png">
+    <script src="js/cell.js" defer></script>
+</head>
+<body>
+    <div id="flex-center-box">
+        <div id="flex-center">
+            <div id="header">
+                <h1>Der Zelluläre Automat</h1>
+                <a id="fraktale-welten" href="index.html"><p>~ Fraktale Welten ~</p></a>
+            </div>
+
+            <div id="conway-box">
+                <p class="txt-box"><strong id="gol">The Game of life by John Horton Conway</strong><br>
+                    Das Spiel des Lebens (englisch Conway’s Game of Life) ist ein vom Mathematiker John Horton Conway 1970 entworfenes Spiel, basierend auf einem zweidimensionalen, zellulären Automaten. Es ist eine einfache und bis heute populäre Umsetzung der Automaten-Theorie von Stanisław Marcin Ulam.</p>
+                    <p class="txt-box">Das Spielfeld ist in Zeilen und Spalten unterteilt und theoretisch unendlich groß. Jedes Gitterquadrat ist ein zellulärer Automat (Zelle), der einen von zwei Zuständen einnehmen kann, welche oft als lebend und tot bezeichnet werden. Zunächst wird eine Anfangsgeneration von lebenden Zellen auf dem Spielfeld platziert. Jede lebende oder tote Zelle hat auf diesem Spielfeld genau acht Nachbarzellen, die berücksichtigt werden (Moore-Nachbarschaft). Der im nächsten Schritt (Generation) vorliegende Zustand jeder Zelle ergibt sich anhand einfacher Regeln aus den Zuständen ihrer Nachbarzellen.</p>
+                    <p class="txt-box">Die Folgegeneration wird für alle Zellen gleichzeitig berechnet und ersetzt die aktuelle Generation. Der Zustand einer Zelle (lebendig oder tot) in der Folgegeneration hängt nur vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer acht Nachbarzellen ab.</p>
+                    <p class="txt-box"><strong id="hint">Die von Conway zu Anfang verwendeten Regeln sind &nbsp; (lebende Zellen grün dargestellt) &nbsp;&nbsp; &#10173;</strong></p>
+                    <p class="txt-box">Eine tote Zelle mit genau drei lebenden Nachbarn wird in der Folgegeneration „geboren“ (zum Leben erweckt). Hier hat die mittlere (tote) Zelle genau drei lebende Nachbarn und wird in der nächsten Generation leben:</p>
+                     <img class="gol-pics" src="img/gol1.JPG" alt="gol1">
+                    <p class="txt-box">Eine lebende Zelle mit weniger als zwei lebenden Nachbarn stirbt in der Folgegeneration (an Einsamkeit). Hier hat die mittlere Zelle nur einen lebenden Nachbarn und wird in der nächsten Generation tot sein. Ob die Zelle rechts unten ebenfalls stirbt, hängt von ihren weiteren Nachbarn ab.</p>
+                     <img class="gol-pics" src="img/col2.JPG" alt="gol2">
+                     <p class="txt-box">Eine lebende Zelle mit zwei oder drei lebenden Nachbarn bleibt in der Folgegeneration am Leben. Hier hat die mittlere Zelle genau drei lebende Nachbarn und wird in der nächsten Generation weiterhin leben.
+                     ab.</p>
+                     <img class="gol-pics" src="img/gol3.JPG" alt="gol3">
+                     <p class="txt-box">Eine lebende Zelle mit mehr als drei lebenden Nachbarn stirbt in der Folgegeneration (an Überbevölkerung). Hier hat die mittlere Zelle fünf lebende Nachbarn und wird in der nächsten Generation tot sein. Dasselbe gilt für die mittlere Zelle der oberen Reihe, sie hat mindestens vier lebende Nachbarn. Die tote linke Zelle der mittleren Reihe hat auch mindestens vier lebende Nachbarn und wird daher in der nächsten Generation tot bleiben.</p>
+                     <img class="gol-pics" src="img/gol4.JPG" alt="gol4">
+                     <p class="txt-box">Mit diesen vier einfachen Regeln kann aus gegebenen Anfangsmustern im Laufe des Spiels eine Vielfalt komplexer Strukturen wachsen. Es gibt statische Strukturen, die sich von einer zur nächsten Generation nicht ändern, andere oszillieren, indem sie nach einer endlichen Anzahl Generationen wieder vorliegen, wieder andere wachsen oder vergehen. Manche Strukturen, sogenannte Raumschiffe, bewegen sich orthogonal oder diagonal auf dem Spielfeld fort, indem sie aufgrund der Regeln verschobene Kopien von sich selbst erzeugen.</p> 
+                     <strong><a id="gol-link" href="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens">. . . weiterlesen . . .</a></strong>
+                    <button id="conways-btn"><a id="yt" href="https://youtu.be/C2vgICfQawE?si=Y04HTk9BYES0uhGQ">"epic Conway's Game of Life" on YouTube</a></button>                   
+            </div>
+
+            <div id="pic">
+                <img src="img/olanza_alsen17_16.png" alt="olanza_alsen17_16">
+            </div>
+            
+            <p style="background-color: #112;">Ein anderes Muster:</p>
+            <canvas id="canvas"></canvas>
+            <div>
+                <button id="btn">play - stop</button>
+            </div>    
+            <label for="speed" id="speed-label">50</label>  
+            <!--                      
+              <input type="range" min="25" max="500" id="speed" value="200">
+              -->
+
+            <!---CodePen-Glow-Schieberegler by Alvaro Montoro---------->
+            <input type="range" id="speed" class="glow" style="--val: 50" value="50" min="0" max="100" oninput="this.style='--val:'+this.value"/>
+            <!---------------------------------------------------->
+        
+        </div>
+    </div>
+    
+
+</body>
+</html>

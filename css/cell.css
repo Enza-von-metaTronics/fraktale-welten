@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    /* overflow: hidden; */
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+      background-image: linear-gradient(45deg, #223, #112);
+    background:
+      radial-gradient(at 100% 0, rgba(37, 74, 58, 0.469), #fff0 50%),
+      radial-gradient(at 0% 100%, #0002, #26111169 50%),
+      #545153;
+}
+
+#flex-center-box{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#flex-center{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+h1, h2{
+    color: #18dbcb;
+    font-weight: 200;
+    margin-top: 1rem; 
+    font-size: 3rem; 
+}
+
+#fraktale-welten{
+  text-decoration: none;
+}
+#fraktale-welten:hover{
+  background: #18db1b32;
+  color: #3df25b;
+  border-radius: 25px;
+}
+#fraktale-welten:active{
+  box-shadow: none;
+}
+
+#header{
+    background-color: #112;
+    padding: 2rem;
+    padding-top: .3rem;
+    border-radius: 20px;
+    box-shadow: 1em 1em 1em #252023;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#conway-box{
+  margin-top: 1rem;
+  width: 60vw;
+  background-color: #112;
+  padding: 2rem;
+  padding-top: .3rem;
+  border-radius: 20px;
+  box-shadow: 1em 1em 1em #252023;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+
+}
+
+pre{
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#hint{
+  font-weight: 100;
+  font-size: 13px;
+  color: rgb(118, 244, 92);
+}
+
+.txt-box{
+ margin: 1rem;
+  width: 50vw
+}
+
+#gol{
+  margin-top: 1em;
+}
+
+.gol-pics{
+  opacity: .8;
+  margin: .5em 0;
+}
+
+#gol-link{
+  color: rgba(255, 166, 0, 0.918);
+  text-decoration: none;
+}
+
+#gol-link:hover{
+  color: rgb(253, 189, 69);
+  cursor: pointer;
+}
+
+#conways-btn{
+  width: 22em;
+  height: 2.2em;
+
+}
+
+#yt{
+  color: rgba(28, 18, 126, 0.874);
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#txt-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+p{
+    color: #18dbcb;
+    font-weight: 100;
+    margin: 0;
+}
+
+#pic{
+  opacity: .8;
+  margin: 2em 0 3rem 0;
+}
+
+img{
+  width: 100px;
+}
+
+#btn{
+    margin: 1rem;
+    width: 11em;
+    height: 3em;
+    background-color: #1c3835;;
+    border-radius: 25px;
+    box-shadow: 1em 1em 1em #252023;
+    border: none;
+    color: #18dbcb;
+}
+#btn:hover{
+    background-color:  #18dbcb;;
+    cursor: pointer; 
+    color: #1e312f;
+}
+
+#btn:active{
+    box-shadow: none;
+}
+
+/*--------- Glow-Schieberegle r----------*/ 
+            /* 
+                styles based on this guide: 
+                - https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/
+                
+                design based on these demos: 
+                    - https://codepen.io/alvaromontoro/pen/yLwPvaG
+                    - https://codepen.io/jh3y/pen/YzgYPNb 
+              */
+
+  
+  .glow {
+    margin: 1.8rem 0 2rem 0 ;
+    --c: rgb(0, 255, 255, calc(0.25 + var(--val) / 125));
+    --c: hsl(160deg 80% 50% / calc(0.25 + var(--val) / 125));
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+    position: relative;
+  }
+  
+  .glow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc((var(--val) - 1) * 1%);
+    min-width: 0.5em;
+    height: 100%;
+    background: var(--c);
+    box-shadow: 
+      0 0 0.2em 0 hsl(0 0% 0%) inset, 
+      -0.1em 0.1em 0.1em -0.1em hsl(0 0% 100% / 0.5),
+      0 0 calc(1em + 0.001em * var(--val)) calc(0.1em + 0.00025em * var(--val)) var(--c)
+      ;
+    border-radius: 1em 0 0 1em;
+    opacity: calc(20% + var(--val) * 1%);
+  }
+  
+  /***** Track Styles *****/
+  /***** Chrome, Safari, Opera, and Edge Chromium *****/
+  .glow::-webkit-slider-runnable-track {
+    box-shadow: 
+      0 0 0.2em 0 hsl(0 0% 0%) inset, 
+      -0.1em 0.1em 0.1em -0.1em hsl(0 0% 100% / 0.5);
+    background: 
+      linear-gradient(to bottom right, #0001, #0000),
+      #252023;
+    border-radius: 1em;
+    height: 1em;
+  }
+  
+  /******** Firefox ********/
+  .glow::-moz-range-track {
+    box-shadow: 0 0 2px 0 hsl(0 0% 0%) inset, -1px 1px 1px -1px hsl(0 0% 100% / 0.5);
+    background: 
+      linear-gradient(var(--c) 0 0) 0 0 / calc(var(--val) * 1%) 100% no-repeat,
+      linear-gradient(to bottom right, #0001, #0000),
+      #343133;
+    border-radius: 1em;
+    height: 1em;
+  }
+  
+  
+  /***** Thumb Styles *****/
+  /***** Chrome, Safari, Opera, and Edge Chromium *****/
+  .glow::-webkit-slider-thumb {
+    --d: var(--c);
+    --d: rgb(from var(--c) r g b / calc(0.35 * var(--val) * 1%));
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    background-color: #5cd6ebf7;
+    transform: translateY(calc(-50% + 0.5em));
+    width: 4em;
+    aspect-ratio: 1;
+    background: rgb(192, 27, 27);
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side, #0000 22.5%, var(--d) 0, #0000 calc(var(--val) * 0.75%)) 50% 50% / 100% 100% no-repeat,
+      radial-gradient(#0000  15%, #343133 16%, #545153 20%),
+      repeating-linear-gradient(#0000 0 10%, #0002 0 20%) 50% 50% / 25% 25% no-repeat,
+      repeating-linear-gradient(90deg, #0000 0 10%, #0002 0 20%) 50% 50% / 25% 25% no-repeat,
+      radial-gradient(var(--c) 17%, #0000 0),
+      #545153;
+    box-shadow:
+      inset -0.15em -0.15em 0.2em #0008,
+      inset 0.15em 0.15em 0.2em #ffffff22,
+      inset calc(var(--val) * 1em / 500) 0em calc(var(--val) * 1em / 500) calc(var(--val) * -1em / 700) var(--c),
+      0.25em 0.25em 0.5em #0006,
+      calc(0.0125em * var(--val)) calc(0.005em * var(--val)) calc(0.02em * var(--val)) calc(-0.01em * var(--val)) #000a;
+    border-radius: 50%;
+      
+  }
+  
+  /***** Firefox *****/
+  .glow::-moz-range-thumb {
+  /*   --d: var(--c);
+    --d: rgb(from var(--c) r g b / calc(0.35 * var(--val) * 1%)); */
+    border: none; /*Removes extra border that FF applies*/
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    background-color: #29d4f2;
+    width: 4em;
+    height: 4em;
+    aspect-ratio: 1;
+    background: rgb(195, 10, 10);
+    border-radius: 50%;
+    background: 
+  /*     radial-gradient(farthest-side, #0000 22.5%, var(--d) 0, #0000 calc(var(--val) * 0.75%)) 50% 50% / 100% 100% no-repeat, */
+      radial-gradient(#0000  15%, #343133 16%, #545153 20%),
+      repeating-linear-gradient(#0000 0 10%, #0002 0 20%) 50% 50% / 25% 25% no-repeat,
+      repeating-linear-gradient(90deg, #0000 0 10%, #0002 0 20%) 50% 50% / 25% 25% no-repeat,
+      radial-gradient(var(--c) 17%, #2d191960 0),
+      #545153;
+    box-shadow:
+      inset -0.15em -0.15em 0.2em #0008,
+      inset 0.15em 0.15em 0.2em #ffffff22,
+      inset calc(var(--val) * 1em / 500) 0em calc(var(--val) * 1em / 500) calc(var(--val) * -1em / 700) var(--c),
+      0.25em 0.25em 0.5em #0006,
+      calc(0.015em * var(--val)) calc(0.005em * var(--val)) calc(0.02em * var(--val)) calc(-0.01em * var(--val)) #0008;
+    border-radius: 50%;
+  }
+/*----------------------------------*/
+
+#canvas{
+    margin: 1rem;
+    width: 500px;
+    height: 500px; 
+    border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 1em 1em 1em #252023;
+}
+
+#speed{
+    transform: rotate(180deg);
+    width: 20rem;
+}
+
+#speed-label{
+    display: inline-block;
+    width: 3rem;
+    margin-left: .8rem;
+    color: #18dbcb;
+    font-size: 2em;
+}
+
+
+
+
